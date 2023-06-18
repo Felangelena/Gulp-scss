@@ -4,12 +4,17 @@
     background-color: $footerBG;
 
     &__text {
-        margin-top: 15px;
+        margin: 15px auto 0 auto;
         font-size: 12px;
         line-height: 20px;
         text-align: center;
         color: $footerTxtColor;
+
+        &--hide {
+            display: none;
+        }
     }
+
 }
 
 .title--footer {

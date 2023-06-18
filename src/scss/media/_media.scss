@@ -1,0 +1,130 @@
+@media (min-width: 769px) {
+    .container {
+        max-width: $tablet;
+    }
+
+    .header {
+        padding: 50px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        width: 609px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+    }
+
+    .nav__item {
+        padding: 8px;
+        &:hover {
+            transition: background-color .5s;
+            background-color: $hamburgerMenuActiveColor;
+        }
+    }
+
+    .hero {
+        height: 361px;
+        background-image: url('img/hero-tablet.jpg');
+    }
+
+    .posts {
+        padding-top: 59px;
+
+        &-grid {
+            width: 565px;
+        }
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .post{
+        &__img {
+            float: left;
+            margin-right: 21px;
+        }
+        &__title {
+            margin-top: 7px;
+            font-size: 16px;
+        }
+        &__desc {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        &__txt {
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+            line-height: 26px;
+            color: $textColor3;
+        }
+        &:nth-child(4) {
+            display: block;
+        }
+    }
+
+    .shots {
+        padding-top: 47px;
+        background-color: rgba(#000, 0.03);
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .shots-grid {
+        padding-top: 35px;
+        padding-bottom: 50px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 250px);
+    }
+
+    .shot--hide {
+        display: block;
+    }
+
+    .link-to-IG {
+        @include title;
+        font-size: 13px;
+        display: inline;
+    }
+
+    .footer {
+        padding-top: 57px;
+        padding-bottom: 56px;
+
+        &__text {
+            width: 684px;
+            margin-top: 22px;
+            font-size: 16px;
+            line-height: 28px;
+
+            &--hide {
+                display: inline;
+            }
+        }
+    }
+
+    .socials {
+        margin-top: 37px;
+    }
+
+    .contacts {
+        margin-top: 34px;
+        max-width: 613px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: $footerTxtColor;
+    }
+}
