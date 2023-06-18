@@ -36,7 +36,7 @@ function jsTask(){
 }
 
 function imageminTask(){
-	return src('src/img/*.*')
+	return src('src/img/**/*.*')
 		.pipe(imagemin())
 		.pipe(dest('dist/img'))
 }

@@ -3,6 +3,13 @@
     margin: 0 auto;
 }
 
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $textColor;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }

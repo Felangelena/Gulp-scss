@@ -1,0 +1,25 @@
+.posts {
+    padding-top: 40px;
+    &-grid {
+        padding-top: 25px;
+        padding-bottom: 43px;
+        display: grid;
+        gap: 32px;
+    }
+}
+
+.post {
+    &__title {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        color: $textColor;
+    }
+
+    &__desc {
+        margin-top: 15px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: $textColor2;
+    }
+}
