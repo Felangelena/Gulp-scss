@@ -153,6 +153,12 @@
         }
     }
 
+    .shot--hide {
+        &:nth-child(4) {
+            display: block;
+        }
+    }
+
     .shots-grid {
         padding-top: 25px;
         gap: 10px;

@@ -14,7 +14,7 @@ function htmlTask(){
     return src('src/**/*.html')
         .pipe(cleanHTML())
         .pipe(browserSync.stream())
-        .pipe(dest('dist'))
+        .pipe(dest('.'))
 }
 
 function scssTask(){
@@ -49,7 +49,7 @@ function clear(){
 function browserTask(){
     browserSync.init({
         server: {
-            baseDir: 'dist'
+            baseDir: '.'
         }
     })
 }
