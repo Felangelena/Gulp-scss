@@ -93,6 +93,10 @@
         display: block;
     }
 
+    .shot--hide:nth-child(4) {
+        display: none;
+    }
+
     .link-to-IG {
         @include title;
         font-size: 13px;
@@ -126,5 +130,37 @@
         line-height: 24px;
         text-align: center;
         color: $footerTxtColor;
+    }
+}
+
+@media (min-width: 1201px) {
+    .container {
+        max-width: $desktop;
+    }
+
+    .hero {
+        height: 550px;
+        background-image: url('img/hero-desktop.jpg');
+    }
+
+    .posts {
+        padding-top: 69px;
+
+        &-grid {
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 45px;
+        }
+    }
+
+    .shots-grid {
+        padding-top: 25px;
+        gap: 10px;
+        grid-template-columns: repeat(4, 285px);
+    }
+
+    .footer {
+        padding-top: 66px;
+        padding-bottom: 70px;
     }
 }
